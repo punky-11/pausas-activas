@@ -1,0 +1,10 @@
+img{
+    height: 80vh; 
+    width: 95vw;
+}
+.comenzarActividad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

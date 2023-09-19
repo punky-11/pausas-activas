@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pausas activas</title>
+    <link rel="stylesheet" href="./src/style/style2.css">
+</head>
+<body onload="cambiarImagen()">
+    
+    <img id="imagen" src="./src/img/portada3.jpg" alt="Imagen inicial">
+
+    <script>
+        // Función para cambiar la imagen después de 30 segundos
+        function cambiarImagen() {
+            var imagenes = [
+                "./src/img/Pausasactivas1.gif",
+                "./src/img/Pausasactivas2.gif",
+                "./src/img/Pausasactivas3.gif",
+                "./src/img/Pausasactivas4.gif",
+                "./src/img/Pausasactivas5.gif",
+                "./src/img/Pausasactivas6.gif",
+                "./src/img/Pausasactivas7.gif",
+            ];
+            
+            var imagen = document.getElementById("imagen");
+            var indice = 0;
+            
+            setInterval(function() {
+                imagen.setAttribute("src", imagenes[indice]);
+                indice = (indice + 1) % imagenes.length;
+            }, 10000);
+            
+        }
+    </script>
+</body>
+</html>
